@@ -1,0 +1,91 @@
+#  DailyRewards config - customize as needed
+# made by: ItzRewa
+#  Custom items
+custom-items:
+  item1: DIAMOND
+  item2: EMERALD_BLOCK
+  item3: NETHER_STAR
+  special_key: TRIPWIRE_HOOK
+  token: EMERALD
+  netherite: NETHERITE_SCRAP
+  golden_apple: GOLDEN_APPLE
+  chest: CHEST
+
+rewards:
+  day1:
+    item: "COOKED_BEEF"
+    name: "&6&lSteak Feast &7[Day 1]"
+    commands:
+      - "give %player% cooked_beef 16"
+    message: "&6You received 16 steaks! Enjoy your meal!"
+
+  day2:
+    item: "IRON_INGOT"
+    name: "&f&lIron Supplies &7[Day 2]"
+    commands:
+      - "give %player% iron_ingot 16"
+    message: "&7You received 16 iron!"
+
+  day3:
+    item: "DIAMOND"
+    name: "&b&lDiamond Treasure &7[Day 3]"
+    commands:
+      - "give %player% diamond 3"
+    message: "&bYou received 3 diamonds!"
+
+  day4:
+    item: "GOLD_INGOT"
+    name: "&a&lGold Rush &7[Day 4]"
+    commands:
+      - "eco give %player% 1000"
+    message: "&aYou received $1000!"
+
+  day5:
+    item: "GOLD_INGOT"
+    name: "&6&lGold Supplies &7[Day 5]"
+    commands:
+      - "give %player% gold_ingot 4"
+    message: "&6You received 4 gold ingots!"
+
+  day6:
+    item: "NETHERITE_SCRAP"
+    name: "&8&lNetherite Fragments &7[Day 6]"
+    commands:
+      - "give %player% netherite_scrap 4"
+    message: "&8You received 4 netherite fragments!"
+
+  day7:
+    item: "<special_key>"
+    name: "&3&lFinal Reward &7[Day 7]"
+    commands:
+      - "ci giveto %player% weekly_key 1"
+    message: "&aYou received Weekly Key! Use &e/warp crates"
+
+# 🧾 Lore texts by state
+claimed-lore:
+  - ""
+  - "&eRewards:"
+  - "&6&l>> &bAlready claimed!"
+  - ""
+  - "&a[&l✔&a] Done"
+
+today-lore:
+  - ""
+  - "&eRewards:"
+  - "&6&l>> &bClick to claim!"
+  - ""
+  - "&a[&l!&a] Today's reward is ready"
+
+cooldown-lore:
+  - ""
+  - "&eRewards:"
+  - "&6&l>> &b???"
+  - ""
+  - "&6&l>> &eAvailable in %time%"
+
+locked-lore:
+  - ""
+  - "&eRewards:"
+  - "&6&l>> &b???"
+  - ""
+  - "&c[&l!&c] Unlock previous reward"

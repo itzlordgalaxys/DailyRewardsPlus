@@ -1,0 +1,73 @@
+name: DailyRewards
+version: 1.5
+main: me.iamnotgalaxy.dailyrewards.DailyRewards
+api-version: 1.16
+description: Advanced daily rewards system with statistics and multi-language support
+author: YourName
+website: https://yoursite.com
+
+commands:
+  rewards:
+    description: Open daily rewards GUI
+    usage: /rewards
+  dailyreload:
+    description: Reload plugin configuration
+    usage: /dailyreload
+    permission: dailyrewards.reload
+  dailyskip:
+    description: Skip days for player
+    usage: /dailyskip <player> [days]
+    permission: dailyrewards.skip
+  dailyreset:
+    description: Reset player progress
+    usage: /dailyreset <player>
+    permission: dailyrewards.reset
+  dailydebug:
+    description: Debug commands
+    usage: /dailydebug <on|off|info> [player]
+    permission: dailyrewards.debug
+  dailyleaderboard:
+    description: View daily rewards leaderboard
+    usage: /dailyleaderboard
+    permission: dailyrewards.leaderboard
+  dailystats:
+    description: View player statistics
+    usage: /dailystats [player]
+    permission: dailyrewards.stats
+  dailyhelp:
+    description: Show help menu
+    usage: /dailyhelp
+    permission: dailyrewards.help
+
+permissions:
+  dailyrewards.*:
+    description: All DailyRewards permissions
+    children:
+      dailyrewards.reload: true
+      dailyrewards.skip: true
+      dailyrewards.reset: true
+      dailyrewards.debug: true
+      dailyrewards.leaderboard: true
+      dailyrewards.stats: true
+      dailyrewards.help: true
+  dailyrewards.reload:
+    description: Reload configuration
+    default: op
+  dailyrewards.skip:
+    description: Skip player days
+    default: op
+  dailyrewards.reset:
+    description: Reset player progress
+    default: op
+  dailyrewards.debug:
+    description: Debug commands
+    default: op
+  dailyrewards.leaderboard:
+    description: View leaderboard
+    default: op
+  dailyrewards.stats:
+    description: View statistics
+    default: op
+  dailyrewards.help:
+    description: View help
+    default: op

@@ -1,0 +1,43 @@
+# 📝 DailyRewards Messages - Fully customizable and translatable
+
+# 💬 Command Messages
+no-permission: "&cYou don't have permission!"
+player-only: "&cThis command can only be used by players!"
+player-offline: "&cPlayer {player} is not online!"
+reload-success: "&aConfiguration reloaded successfully!"
+config-error: "&cConfiguration error! Contact admin."
+reward-not-exist: "&cError: Reward for day {day} doesn't exist!"
+custom-command-message: "&aOpening daily rewards..."
+
+# 📊 Statistics Messages
+leaderboard:
+  title: "&6=== DAILY REWARDS LEADERBOARD ==="
+  top-players: "&eTop 10 players by total claims:"
+  no-data: "&cNo player data available."
+  entry: "&6{position}. &f{player} &7- &b{claims} claims &7- &eDay {day}"
+
+stats:
+  title: "&6=== DAILY REWARDS STATS ==="
+  player: "&ePlayer: &f{player}"
+  current-day: "&eCurrent Day: &f{current}/7"
+  can-claim: "&eCan Claim Today: &f{status}"
+  remaining-time: "&eRemaining Time: &f{time}"
+  total-claims: "&eTotal Claims: &f{claims}"
+  current-streak: "&eCurrent Streak: &f{streak} days"
+  last-claim: "&eLast Claim: &f{date}"
+
+help:
+  title: "&6=== DAILY REWARDS HELP ==="
+  rewards: "&e/rewards &7- Open daily rewards GUI"
+  dailyreload: "&e/dailyreload &7- Reload configuration"
+  dailyskip: "&e/dailyskip <player> [days] &7- Skip days for player"
+  dailyreset: "&e/dailyreset <player> &7- Reset player progress"
+  dailydebug: "&e/dailydebug <on|off|info> [player] &7- Debug commands"
+  dailyleaderboard: "&e/dailyleaderboard &7- View leaderboard"
+  dailystats: "&e/dailystats [player] &7- View player statistics"
+  dailyhelp: "&e/dailyhelp &7- Show this help"
+
+# 🎉 Reward Messages
+reward-complete: "&6🎉 Congratulations! You completed the weekly rewards! Starting over from day 1."
+progress-updated: "&aYour daily rewards progress has been updated!"
+reward-reset: "&aYour daily rewards progress has been reset!"

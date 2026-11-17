@@ -1,0 +1,23 @@
+# 🎯 Custom Commands - Add your own commands that will open rewards GUI
+# Format:
+# command_name:
+#   permission: "your.permission" (optional)
+#   message: "&aOpening rewards..." (optional)
+
+custom-commands:
+  test:
+    permission: ""
+    message: "&aOpening daily rewards..."
+
+  daily:
+    permission: ""
+    message: "&6Opening your daily rewards!"
+
+  reward:
+    permission: "dailyrewards.use"
+    message: "&aCheck your daily rewards!"
+
+  # Add more commands as needed
+  # mycommand:
+  #   permission: "my.permission"
+  #   message: "&cCustom message"
